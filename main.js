@@ -1,9 +1,14 @@
 
+let clockInterface = document.querySelector('clock');
 
-const hour = Date.prototype.getHours();
-const minute = Date.prototype.getMinutes();
-const seconds = Date.prototype.getSeconds();
+let timeHour = Date.prototype.getHours();
+let timeMinutes = Date.prototype.getMinutes();
+let timeSeconds = Date.prototype.getSeconds();
+let cuurentTime = timeHour + ":" + timeMinutes + ":" + timeSeconds;
 
-function update() {
-    
+clockInterface.innerHTML += currentTime;
+
+function updateTime() {
+    clockInterface.textContent = currentTime.toLocaleTimeString('en-US');
+    clockInterface.append
 }
