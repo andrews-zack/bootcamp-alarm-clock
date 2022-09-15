@@ -1,8 +1,13 @@
 @font-face {
     font-family: 'digital-7regular';
-    src: url('digital-7.regular-webfont.woff2') format('woff2'),
-         url('digital-7.regular-webfont.woff') format('woff');
+    src: url('css/digital-7.regular-webfont.woff2') format('woff2'),
+         url('css/digital-7.regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+div {
+    font-family: "digital-7regular", serif;
+    font-size: x-large;
+    color: red;
 }
