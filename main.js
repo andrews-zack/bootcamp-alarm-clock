@@ -6,7 +6,7 @@ let timeMinutes = Date.prototype.getMinutes();
 let timeSeconds = Date.prototype.getSeconds();
 let cuurentTime = timeHour + ":" + timeMinutes + ":" + timeSeconds;
 
-clockInterface.innerHTML += currentTime;
+clockInterface.innerHTML = currentTime;
 
 function updateTime() {
     clockInterface.textContent = currentTime.toLocaleTimeString('en-US');
