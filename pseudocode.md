@@ -32,3 +32,13 @@
     - am/pm
 <br>
 
+### **Functionality**
+
+WHEN a user clicks on or refreshes the page
+    the main clock will display the current time and start counting upwards
+
+IF the user inputs a time in the input field
+    the value will be stored as the alarm time
+
+WHEN the alarm time equals the real time
+    the user will be alerted that the alarm has gone off
