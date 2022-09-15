@@ -1,12 +1,15 @@
 
-let clockInterface = document.querySelector('clock');
+//let clockInterface = document.getElementById('clock');
 
-let timeHour = Date.prototype.getHours();
-let timeMinutes = Date.prototype.getMinutes();
-let timeSeconds = Date.prototype.getSeconds();
+let clockTime = new Date();
+let timeHour = clockTime.getHours();
+let timeMinutes = clockTime.getMinutes();
+let timeSeconds = clockTime.getSeconds();
 let currentTime = timeHour + ":" + timeMinutes + ":" + timeSeconds;
 
-clockInterface.innerHTML = currentTime;
+document.getElementById('clock').innerHTML = currentTime;
+
+//clockInterface.innerHTML = currentTime;
 
 function updateTime() {
     clockInterface.textContent = currentTime.toLocaleTimeString('en-US');

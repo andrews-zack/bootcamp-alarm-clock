@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-.clock {
+#clock {
     font-family: 'digital-7regular', serif;
     font-size: 90px;
     color: red;
