@@ -7,11 +7,14 @@ let timeMinutes = clockTime.getMinutes();
 let timeSeconds = clockTime.getSeconds();
 let currentTime = timeHour + ":" + timeMinutes + ":" + timeSeconds;
 
-document.getElementById('clock').innerHTML = currentTime;
+//document.getElementById('clock').innerHTML = currentTime;
 
-//clockInterface.innerHTML = currentTime;
+/*setInterval(updateTime, 1000);
 
 function updateTime() {
-    clockInterface.textContent = currentTime.toLocaleTimeString('en-US');
-    clockInterface.append
+    document.getElementById('clock').innerHTML = currentTime;
+}   */
+const runningTime = setInterval(updateClock, 1000, currentTime);
+function updateClock(currentTime) {
+    document.getElementById('clock').innerHTML = currentTime;
 }
