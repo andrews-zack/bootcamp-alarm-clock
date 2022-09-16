@@ -7,18 +7,16 @@
     </head>
     <body>
         <div id="clock"></div>
-        <form>
-            <div>
-                <label for="alarm">Choose a time for your alarm:</label>
-                <input id="alarm" type="time" step="60" required/>
-            </div>
-            <p>
-                Alarm time is:<span id="value"></span>
-            </p>
-            <!--<div>
-                <input id="submit" type="submit" value="Set Alarm"/>
-            </div>-->
-        </form>
+        <div>
+            <label for="alarm">Choose a time for your alarm:</label>
+            <input id="alarm" type="time" step="60" required/>
+        </div>
+        <div> 
+            <button id="submit">Set Alarm</button>
+        </div>
+        <div>
+            Alarm time is: <span id="alarm-value"> </span>
+        </div>
         <script src="main.js"></script>
     </body>
 </html>

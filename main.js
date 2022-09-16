@@ -3,22 +3,18 @@ setInterval(updateTime, 1000);
 
 function updateTime() {
     let clockTime = new Date();
-    /*let timeHour = clockTime.getHours();
-    let timeMinutes = clockTime.getMinutes();
-    let timeSeconds = clockTime.getSeconds();
-    let currentTime = timeHour + ":" + timeMinutes + ":" + timeSeconds;*/
     let currentTime = clockTime.toLocaleTimeString('en-US');
     document.getElementById('clock').innerHTML = currentTime;
 }
-const alarmTime = document.getElementById("alarm");
-const timeValue = document.getElementById("value");
-// let submitBtn = document.getElementById("submit");
-// let alarmSet
 
-alarmTime.addEventListener('keydown', (e) => {
-    timeValue.innerText = alarmTime.value;
-}, false);
+let alarmBtn = document.getElementById("submit");
 
-/*function storeAlarm() {
-    console.log(alarmTime);
-};*/
+alarmBtn.addEventListener('click', storeAlarm)
+
+function storeAlarm() {
+    let alarmTime = document.getElementById("alarm").value;
+    let alarmValue = document.getElementById("alarm-value");
+    alarmValue.innerText = alarmTime.toString();
+};
+
+

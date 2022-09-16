@@ -15,3 +15,7 @@
 input[type="time"] {
     width: fit-content;
 }
+
+span {
+    font-weight: bold;
+}
